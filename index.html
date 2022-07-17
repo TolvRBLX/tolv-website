@@ -1,11 +1,91 @@
-<!DOCTYPE html>
 
-<body>
-    <header class="main">
-    <h1>Tolv</h1>
-    <h3>An amazing ranking service for roblox!</h3>
-    <h4>An amazing ranking service! "But, there are so many other ranking services, why should I choose you?" You should choose us because, we are very fast and reliable!</h4>
-    </header>
+<a href="https://discord.gg/qMTnWRPZ7f" target="_blank" class="bg-teal-500 rounded p-2 px-4 mt-2 sm:mt-0 text-white inline-block hover:bg-teal-600 transition-colors">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+Community Discord
+</a>
+</div>
+<div class="lg:flex-1 mb-10 lg-mb-0">
+<img src="./img/skate.png" class="w-full">
+</div>
+</section>
+<section class="p-10 border-t border-t-gray-200">
+<div class="block md:flex ">
+<div class="flex-1 p-4 text-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code w-10 h-10 opacity-50 mb-5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+<h2 class="text-2xl font-semibold mb-2">Rewrite</h2>
+<p>
+We're working on a rewrite of the platform to improve the user experience.
+</p>
+</div>
+<div class="flex-1 p-4 text-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award w-10 h-10 opacity-50 mb-5"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+<h2 class="text-2xl font-semibold mb-2">No ads</h2>
+<p>
+Hyra is moving to a premium model where workspaces will pay a small fee to keep the platform
+running.
+</p>
+</div>
+<div class="flex-1 p-4 text-center">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-life-buoy w-10 h-10 opacity-50 mb-5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line></svg>
+<h2 class="text-2xl font-semibold mb-2">Better support</h2>
+<p>
+We heard you! We're bringing faster and more experienced support to the platform.
+</p>
+</div>
+</div>
+</section>
+<section class="p-10 border-t border-t-gray-200">
+<h1 class="text-3xl font-bold pb-6 border-b border-b-gray-200">Frequently Asked Questions</h1>
+<div class="faq">
+<div>
+<div>
+<div>
+<div class="flex py-4 cursor-pointer">
+<div class="font-bold flex-1">If I join Tolv when it launches will I get access to my old data?
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</div>
+<div>Unfortunately, we deleted all data associated with our service so if you decide to join Hyra when
+it launches, you'll be starting with a blank slate.</div>
+</div>
+<div>
+<div class="flex py-4 cursor-pointer">
+<div>
+<div class="flex py-4 cursor-pointer">
+<div>
+<div class="flex py-4 cursor-pointer">
+<div class="font-bold flex-1">Will you provide updates on progress?</div>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</div>
+<div>We will be providing continous updates and sneak peeks in our <a href="https://discord.gg/qMTnWRPZ7f" target="_blank" class="text-blue-500 hover:text-blue-600">Community Discord</a>. We hope you'll
+join us.</div>
+</div>
+</footer>
+<script type="text/javascript">
+        feather.replace()
+    </script>
+<script type="text/javascript">
+        var open = undefined;
+
+        var faq = document.querySelector('.faq');
+
+        for (let child of faq.children) {
+            child.children[0].addEventListener("click", function () {
+                if (open && open !== child) {
+                    open.classList.remove('active');
+                }
+
+                child.classList.add("active");
+                open = child;
+
+                if(plausible) {
+                    plausible('Open FAQ', { props: { title: child.children[0].children[0].innerHTML } })
+                }
+            })
+        }
+    </script>
+
+
 </body>
 
 
